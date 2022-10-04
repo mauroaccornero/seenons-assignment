@@ -1,8 +1,8 @@
 // https://docs.cypress.io/api/introduction/api.html
 
-describe('My First Test', () => {
-  it('visits the app root url', () => {
-    cy.visit('/')
-    cy.contains('h1', 'You did it!')
-  })
-})
+describe("Stop detail test", () => {
+  it("visits the stop detail page", () => {
+    cy.visit("/stop/1");
+    cy.contains("h1", "You did it!");
+  });
+});
