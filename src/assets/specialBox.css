@@ -1,0 +1,12 @@
+
+.special-box{
+    border-radius: var(--default-border-radius);
+    background-color: var(--color-light-grey);
+    color: var(--color-dark-grey);
+    padding: var(--default-half-space);
+    margin-top: var(--default-half-space);
+}
+
+.special-box > strong, .special-box > strong > *{
+    font-weight: 900;
+}

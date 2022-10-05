@@ -1,33 +1,47 @@
 @import "./base.css";
+@import "./buttons.css";
+@import "./header.css";
+@import "./card.css";
+@import "./chips.css";
+@import "./specialBox.css";
 
-#app {
-  max-width: 1280px;
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+a{
+  color: var(--color-green);
+  transition: color .4s;
+}
+
+a:hover, a:focus{
+  color: var(--color-indigo);
+}
+
+a:active{
+  color: var(--color-black);
+}
+
+.container {
+  padding: var(--default-space);
   margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.warning-message{
+  background-color: var(--color-orange);
+  padding: var(--default-half-space) var(--default-space);
+  color: var(--color-white);
+  border-radius: var(--default-border-radius);
+  font-weight: 900;
+  margin-top: var(--default-half-space);
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-
+  .container {
+    max-width: 1280px;
   }
 }

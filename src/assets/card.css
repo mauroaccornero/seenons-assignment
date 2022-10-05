@@ -1,0 +1,82 @@
+
+.card{
+    border-radius: var(--default-border-radius);
+    background-color: var(--color-white);
+    margin: var(--default-half-space) 0;
+}
+
+.card.card-order{
+    border-left: var(--default-space) solid var(--color-dark-green);
+}
+
+.card.card-order.card-placement{
+    border-left: var(--default-space) solid var(--color-dark-orange);
+}
+
+.card-header{
+    padding: var(--default-half-space);
+}
+
+.card-header h1{
+    font-weight: 900;
+    font-size: var(--default-font-size);
+    display: flex;
+    align-items: center;
+}
+
+.card-header h1 span{
+    display: flex;
+    align-items: center;
+    padding-left: var(--default-half-space);
+}
+
+.card-header h1 span svg{fill: var(--color-light-grey)}
+
+.card-header h2{
+    font-weight: 400;
+    color: var(--color-green);
+    font-size: calc( var(--default-font-size) * 0.8);
+}
+
+.card-header.order-card-header > h1{
+    display: flex;
+}
+
+.card-header.order-card-header > h1 > span.order-type{
+    margin-left: auto;
+}
+
+.card-header.order-card-header > h1 > span svg{
+    fill: var(--color-green)
+}
+
+.card-header.stops-card-header{
+    padding: 0;
+    position: relative;
+    padding-bottom: var(--default-half-space);
+}
+
+.card-header.stops-card-header > div{
+    background-color: var(--color-indigo);
+    color:var(--color-white);
+    padding: var(--default-space);
+    padding-bottom: var(--default-space);
+}
+
+.card-header.stops-card-header > h3{
+    position: absolute;
+    right: var(--default-half-space);
+    bottom: 0;
+    background-color: var(--color-white);
+    border-radius: var(--default-border-radius);
+    padding: 0 var(--default-half-space);
+    box-shadow: 0 3px 0 var(--color-light-grey);
+}
+
+.card-body{
+    padding: var(--default-half-space);
+}
+
+.card-body >.button-container > *:last-child {
+    margin-right: 0;
+}

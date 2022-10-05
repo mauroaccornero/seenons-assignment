@@ -1,0 +1,18 @@
+header {
+    background: var(--color-indigo);
+    color: var(--color-white);
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header > .container a{
+    margin: 0 auto;
+    color: var(--color-white);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: var(--default-font-size);
+    text-decoration: none;
+}
