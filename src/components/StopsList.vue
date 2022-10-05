@@ -1,10 +1,16 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import StopsListView from "@/views/StopsListView.vue";
+import getItems from "@/api/getItems";
+import type IStop from "@/common/interfaces/IStop";
+
+interface IData {
+  stops: IStop[] | null;
+}
 
 export default defineComponent({
   components: { StopsListView },
-  data: () => ({
+  data: (): IData => ({
     stops: null,
   }),
 
@@ -14,9 +20,7 @@ export default defineComponent({
 
   methods: {
     async fetchData() {
-      const data = await (
-        await fetch(window.location.origin + "/api/stops")
-      ).json();
+      const data = await getItems<IData>("/api/stops");
       this.stops = data.stops;
     },
   },

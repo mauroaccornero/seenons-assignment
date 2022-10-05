@@ -28,6 +28,7 @@ describe("ShopDetailView unit test", () => {
           size: 20,
           status: 2,
           type: 0,
+          issue: null,
         },
       ],
       comment: "Some comment",

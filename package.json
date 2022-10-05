@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "vue": "^3.2.38",
-    "vue-router": "^4.1.5"
+    "vue-router": "^4.1.5",
+    "vue3-material-design-icons-ts": "^5.0.10"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",

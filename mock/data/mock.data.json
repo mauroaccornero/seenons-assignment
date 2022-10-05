@@ -27,7 +27,8 @@
                     "quantity": 1,
                     "size": 20,
                     "status": 4,
-                    "type": 0
+                    "type": 0,
+                    "issue": null
                 },
                 {
                     "order_id": "000000006",
@@ -36,7 +37,8 @@
                     "quantity": 1,
                     "size": 20,
                     "status": 4,
-                    "type": 0
+                    "type": 0,
+                    "issue": null
                 }
             ]
         },
@@ -67,7 +69,8 @@
                     "quantity": 1,
                     "size": 20,
                     "status": 4,
-                    "type": 0
+                    "type": 0,
+                    "issue": null
                 },
                 {
                     "order_id": "000000005",
@@ -76,7 +79,8 @@
                     "quantity": 1,
                     "size": 20,
                     "status": 4,
-                    "type": 0
+                    "type": 0,
+                    "issue": null
                 }
             ]
         },
@@ -107,7 +111,8 @@
                     "quantity": 1,
                     "size": 20,
                     "status": 2,
-                    "type": 0
+                    "type": 0,
+                    "issue": null
                 },
                 {
                     "order_id": "000000004",
@@ -116,7 +121,8 @@
                     "quantity": 2,
                     "size": 20,
                     "status": 2,
-                    "type": 1
+                    "type": 1,
+                    "issue": null
                 },
                 {
                     "order_id": "000000002",
@@ -125,7 +131,8 @@
                     "quantity": 1,
                     "size": 20,
                     "status": 2,
-                    "type": 0
+                    "type": 0,
+                    "issue": null
                 }
             ]
         },
@@ -156,7 +163,8 @@
                     "quantity": 5,
                     "size": 20,
                     "status": 2,
-                    "type": 1
+                    "type": 1,
+                    "issue": null
                 },
                 {
                     "order_id": "000000002",
@@ -165,7 +173,8 @@
                     "quantity": 4,
                     "size": 20,
                     "status": 2,
-                    "type": 0
+                    "type": 0,
+                    "issue": null
                 }
             ]
         }

@@ -1,13 +1,8 @@
 <script setup lang="ts">
-type Stop = {
-  stop_id: number;
-  name: string;
-  time_start: string;
-  time_end: string;
-};
+import type IStop from "@/common/interfaces/IStop";
 
 interface Props {
-  stops: Stop[] | null;
+  stops: IStop[] | null;
 }
 
 const props = defineProps<Props>();
@@ -27,26 +22,10 @@ const formatDate = (date: string): string => {
         :key="stop_id"
       >
         <RouterLink :to="`stop/${stop_id}`"
-          >{{ name }}
-          <span class="time_start">{{ formatDate(time_start) }}</span> -
-          <span class="time_end">{{ formatDate(time_end) }}</span>
+          >{{ name }} <span>{{ formatDate(time_start) }}</span> -
+          <span>{{ formatDate(time_end) }}</span>
         </RouterLink>
       </li>
     </ul>
   </main>
 </template>
-
-<style>
-a {
-  text-decoration: none;
-  color: #42b883;
-}
-li {
-  line-height: 1.5em;
-  margin-bottom: 20px;
-}
-.time_start,
-.time_end {
-  font-weight: bold;
-}
-</style>
